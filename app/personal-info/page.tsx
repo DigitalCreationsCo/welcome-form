@@ -19,7 +19,7 @@ export default function PersonalInfo() {
   const states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
 
   return (
-    <PageWrapper>
+    <PageWrapper key={window.location.pathname}>
           <h2 className="text-2xl font-bold mb-6">Tell Me About Yourself</h2>
           <p className='mb-6'>Please share your name and interests in technology. Your information will not be saved or shared.</p>
           <div className="space-y-4">

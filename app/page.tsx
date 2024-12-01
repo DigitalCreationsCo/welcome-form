@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <PageWrapper>
+    <PageWrapper key={window.location.pathname}>
           <h1 className="text-2xl font-bold mb-6">Welcome 👋🏽</h1>
           <p className="mb-6">This is a project by Bryant Mejia. The project showcases a web form built with <strong>React</strong> and <strong>Next.js</strong>. </p>
           <Button 
